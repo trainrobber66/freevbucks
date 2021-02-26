@@ -6,11 +6,37 @@ h1, a, p {
 font-family:"Helvetica";
 
 }
+  body {
+  padding: 50px; 
+}
+  
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #0CB1C4;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 </style>
 <body>
 <title>You are entering free VBUCKS</title>
 <center>
-<h1>You are entering free VBUCKS</h1>
+  <div><h1>You are entering free VBUCKS</h1></div>
 <form action="https://trainrobber66.github.io/getbeaned/" method="get">
 <input type="number" name="quantity" min="1" max="9999">
 <input type="submit">
